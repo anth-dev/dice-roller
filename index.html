@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Practice</title>
+</head>
+
+<body>
+  <script>
+    // Your JavaScript goes here!
+
+    // Ask what sided dice to roll
+
+    let sides = prompt('How many sides? 4 or 6?', '');
+    
+    if (sides == '4') {
+      // Roll a D4
+      console.log('Rolling a D4');
+      let generatedNumber = Math.random();
+      console.log(generatedNumber);
+
+      if (generatedNumber <= .25) {
+        alert('You rolled a 1');
+        console.log('1');
+      } else if (generatedNumber <= .50) {
+        alert('You rolled a 2');
+        console.log('2');
+      } else if (generatedNumber <= .75) {
+        alert('You rolled a 3');
+        console.log('3');
+      } else if (generatedNumber <= 1) {
+        alert('You rolled a 4');
+        console.log('4');
+      }
+    } else if (sides == '6') {
+      // Roll a D6
+      console.log('Rolling a D6');
+      let generatedNumber = Math.random();
+      console.log(generatedNumber);
+
+      if (generatedNumber <= .166) {
+        alert('You rolled a 1');
+        console.log('1');
+      } else if (generatedNumber <= .332) {
+        alert('You rolled a 2');
+        console.log('2');
+      } else if (generatedNumber <= .498) {
+        alert('You rolled a 3');
+        console.log('3');
+      } else if (generatedNumber <= .664) {
+        alert('You rolled a 4');
+        console.log('4');
+      } else if (generatedNumber <= .83) {
+        alert('You rolled a 5');
+        console.log('5');
+      } else if (generatedNumber <= .996) {
+        alert('You rolled a 6');
+        console.log('5');
+      } else {
+        alert('Number out of range. Please try again.');
+      }
+    }
+
+  </script>
+</body>
+
+</html>
